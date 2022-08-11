@@ -13,14 +13,14 @@
         appId: "4719163514853640",
         cookie: true,
         xfbml: true,
-        version: "v1",
+        version: "v14.0",
       });
       FB.AppEvents.logPageView();
-    };
 
-    FB.getLoginStatus(function (response) {
-      statusChangeCallback(response);
-    });
+      FB.getLoginStatus(function (response) {
+        statusChangeCallback(response);
+      });
+    };
 
     (function (d, s, id) {
       var js,
